@@ -17,8 +17,7 @@ from fabric.api import *
 #: the user you want to use for remote servers
 env.user = 'root'
 #: the servers
-# env.hosts = ['server1.remote', 'server2.remote']
-env.hosts = ['192.168.1.202']
+env.hosts = ['server1.remote', 'server2.remote']
 #: the place where you want to put your app
 ROOT = '/web'
 #: temporary directory used to handle tarballs

@@ -13,6 +13,7 @@ import os
 
 
 DEBUG = False
+# Detect environment by whether debug named file exists or not
 if os.path.exists(os.path.join(os.path.dirname(__file__), 'debug')):
     DEBUG = True
 

@@ -9,7 +9,9 @@
 """
 from flask import Flask
 app = Flask(__name__)
+
 import yourapp.views
+from yourapp import settings
 
 
-app.config.from_object('yourapp.settings')
+app.config.from_object(settings)

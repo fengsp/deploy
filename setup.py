@@ -14,7 +14,7 @@ setup(
     include_package_data=True, # look for a MANIFEST.in file
     zip_safe=False,
     install_requires=[
-        'Flask>=0.2',
+        'Flask==0.10.1',
         'Lib>=0.1'
     ]
 )

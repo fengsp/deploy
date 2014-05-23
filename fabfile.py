@@ -96,5 +96,6 @@ def upgrade():
 
     with cd(os.path.join(ROOT, DIRNAME)):
         # upgrade
-        run('supervisorctl reload')
-        run('supervisorctl restart all')
+        # run('supervisorctl reload')
+        run('supervisorctl status gunicorn | sed "s/.*[pid ]\([0-9]\+\)'
+            '\,.*/\1/" | xargs kill -HUP')

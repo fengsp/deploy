@@ -98,4 +98,4 @@ def upgrade():
         # upgrade
         # run('supervisorctl reload')
         run('supervisorctl status gunicorn | sed "s/.*[pid ]\([0-9]\+\)'
-            '\,.*/\1/" | xargs kill -HUP')
+            '\,.*/\\1/" | xargs kill -HUP')
